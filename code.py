@@ -89,3 +89,14 @@ a_list = [1,4,2]
 
 for perm in itertools.permutations(a_list):
   print(perm)
+
+
+## based on the input n , it will return a list of binary no starting from 0 till n 
+import math 
+
+def binlist(n):
+    last_digit = int(math.pow(2,n) )
+    seq = []
+    for i  in range(last_digit):
+        seq.append(format(i,'b'))
+    return seq
