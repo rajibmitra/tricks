@@ -1,0 +1,2 @@
+# tricks
+common programming tricks 
