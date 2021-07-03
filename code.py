@@ -100,3 +100,19 @@ def binlist(n):
     for i  in range(last_digit):
         seq.append(format(i,'b'))
     return seq
+
+## find the consequtive 1s in list of 0s and 1s
+
+class Solution:
+    def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
+        count = max_count = 0 
+        
+        for num in nums:
+            if num ==1: 
+                count = count +1
+                
+            else: 
+                max_count = max(max_count,count)
+                count=0
+        return max(max_count,count)
+        
